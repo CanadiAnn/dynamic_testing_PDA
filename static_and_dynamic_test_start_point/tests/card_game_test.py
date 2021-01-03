@@ -7,10 +7,12 @@ class CardGameTest(unittest.TestCase):
     
     def test_checkforace(self):
         self.card = Card('hearts', 1)
-        self.card1 = Card('hearts', 2)
+        self.card2 = Card('spades', 12)
         self.card_game = CardGame()
         return_value = self.card_game.checkforace(self.card)
         self.assertEqual(True, return_value)
+        return_value = self.card_game.checkforace(self.card2)
+        self.assertEqual(False, return_value)
 
     def test_highest_card(self):
         self.card1 = Card('hearts', 2)
