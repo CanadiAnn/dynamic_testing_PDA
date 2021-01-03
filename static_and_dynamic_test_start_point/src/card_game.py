@@ -12,7 +12,14 @@ class CardGame:
     else:                                         # add ':'
       return False                                # replace 'f' by 'F'
 
-  
+
+  # PSEUDOCODE checkforace
+  # if the value of the card is equal to 1
+  # return True
+  # otherwise
+  # return False
+
+
   def highest_card(self, card1, card2):           # replace 'dif' by 'def', add ',', add ':'
     if card1.value > card2.value:                 # add ':'
       return card1                                # add '1' to 'card'
